@@ -35,6 +35,9 @@ int main() {
         head = head->next;
         free(temp);
     }
+    
+    head = NULL;
+    new = NULL;
 
 
 

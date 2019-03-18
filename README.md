@@ -39,10 +39,41 @@ Second programming assignment for learning C as a second programming language.
 
 ### Extension
 
-Your choice here...
+Structure of strings data base type with comparison function
 
 ### Implementation notes
+struct person:
+    Defining the struct as a persons name (c-style string) and their age type int
 
-Your description here. Code samples will be appreciated...
+struct Node:
+    Define the Node singly linked and with a ddata type person
+
+new_node
+    take the data as an argument (name, age) make space in memory. add the data to the
+    node and set the next pointer to NULL
+
+print_list function
+    takes a pointer to the head of the list as an argument and iterates through
+    the list printing the name and age. loops while the pointer does not point to null
+
+compare_nodes
+    functions takes a two pointers to nodes as arguments and compares the name in each node
+    by using the strcmp(). the function just adds to the strcmp() function by doing the same with
+    two nodes and returning in the same manor.
+
+ list_insert
+    (*head_ptr == NULL || compare_nodes(*head_ptr, new_ptr) > 0)
+    first check is if the list is empty or if the new node name is first alphabetically
+    if so the head pointer is set to point to the new node.
+    if the list has more then node the it will traverse the list while the next node is
+    before the current node alphabetically once it get to the node the is after the current
+    node it inserts by making the current node point to the new node then points the new
+    node to the next node.
+
+ Main
+    uses the List_Node header file to build a linked list. prints the list and
+    frees up the memory used to build the list
+
+
 
 
